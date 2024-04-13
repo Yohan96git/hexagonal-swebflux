@@ -17,10 +17,10 @@ public class CandidateDocument {
 
     @Id
     private String id;
+    private String dni;
     private String name;
     private String lastName;
     private String address;
-    private String dni;
     private String phone;
     private String email;
     private String cvUrl;

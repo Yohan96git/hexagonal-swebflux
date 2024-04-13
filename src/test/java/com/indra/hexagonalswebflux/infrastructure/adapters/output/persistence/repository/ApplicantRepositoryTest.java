@@ -22,13 +22,13 @@ public class ApplicantRepositoryTest {
     @Test
     public void findByDniTest() {
         Mono<ApplicantDocument> applicantDocumentFlux = applicantRepository.save(ApplicantDocument.builder()
-                .dni("12347")
+                .dni("12350")
                 .name("Name test a")
                 .lastName("lastName test a")
                 .email("Email test")
                 .phone("98766")
                 .cvUrl("cv")
-                .build()).flatMap(a->applicantRepository.findByDni("12347"));
+                .build()).flatMap(a->applicantRepository.findByDni("12350"));
 
         StepVerifier
                 .create(applicantDocumentFlux)

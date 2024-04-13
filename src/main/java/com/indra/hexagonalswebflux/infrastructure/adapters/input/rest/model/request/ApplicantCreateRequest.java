@@ -4,6 +4,7 @@ package com.indra.hexagonalswebflux.infrastructure.adapters.input.rest.model.req
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
+@Builder
 @Data
 @AllArgsConstructor
 public class ApplicantCreateRequest {

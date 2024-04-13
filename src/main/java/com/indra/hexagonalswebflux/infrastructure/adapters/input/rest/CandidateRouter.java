@@ -20,7 +20,7 @@ public class CandidateRouter {
         return RouterFunctions.
                 route(GET("/candidates").and(accept(MediaType.APPLICATION_JSON)), handler::getAll)
                 .andRoute(GET("/candidates/{dni}").and(accept(MediaType.APPLICATION_JSON)), handler::findByDni)
-                .andRoute(POST("/candidate").and(accept(MediaType.APPLICATION_JSON)), handler::save)
+                .andRoute(POST("/candidates").and(accept(MediaType.APPLICATION_JSON)), handler::save)
                 .andRoute(PUT("/candidates/{dni}").and(accept(MediaType.APPLICATION_JSON)), handler::update)
                 .andRoute(DELETE("/candidates/{dni}").and(accept(MediaType.APPLICATION_JSON)), handler::DeleteByDni);
     }
